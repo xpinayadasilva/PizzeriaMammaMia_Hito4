@@ -1,4 +1,4 @@
-/* import formatCurrency from "../assets/utils/formatCurrency.js";  */
+import formatCurrency from "../assets/utils/formatCurrency.js";  
 import React, { useState, useEffect } from 'react';
 
 const Pizza = () =>{
@@ -49,10 +49,10 @@ const Pizza = () =>{
               <span>Ingredientes: 
                 <p className="list-unstyled items-start justify-items-center text-s">                 
                  🍕                                
-                  <li key={pizza.id}>{pizza.ingredients.join(", ")}</li>        
-                 
+                  <li key={pizza.id}>{pizza.ingredients.join(", ")}</li>
                 </p>                
               </span>
+              <div>$ {pizza.price}</div>
               <div className="inline-flex items-center px-3 py-2 backdrop:max-w-sm bg-white border border-gray-200 rounded-lg  dark:bg-gray-800 dark:border-gray-700">
               <button className="bg-white border-gray-500 hover:bg-blue-700 text-black font-bold py-1 px-2 rounded">
                   Ver más 👀
